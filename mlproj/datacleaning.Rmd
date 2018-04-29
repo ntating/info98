@@ -1,0 +1,27 @@
+---
+title: "datacleaning"
+author: "Nicholas Tating"
+description: slightly changes wine quality csv files (was this even necessary?)
+date: "4/28/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+download.file(url = "https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv", destfile = "red.csv")
+download.file(url = "https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-white.csv", destfile = "white.csv")
+
+datred <- read.csv(file = "red.csv", sep = ";")
+data.frame(datred)
+write.csv(datred, file = "red-wine.csv", sep = ",", col.names = TRUE)
+datwhite <- read.csv(file = "white.csv", sep = ";")
+data.frame(datwhite)
+write.csv(datwhite, file = "white-wine.csv", sep = ",", col.names = TRUE)
+```
+
+```{r}
+read.csv(file = "red.csv")
+```
