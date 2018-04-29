@@ -10,14 +10,14 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r}
-AusMen <- read.csv(file = "AusOpen-men-2013.csv", stringsAsFactors = F)[3:42]
-AusWom <- read.csv(file = "AusOpen-women-2013.csv", stringsAsFactors = F)[3:42]
-FreMen <- read.csv(file = "FrenchOpen-men-2013.csv", stringsAsFactors = F)[3:42]
-FreWom <- read.csv(file = "FrenchOpen-women-2013.csv", stringsAsFactors = F)[3:42]
-USMen <- read.csv(file = "USOpen-men-2013.csv", stringsAsFactors = F)[3:42]
-USWom <- read.csv(file = "USOpen-women-2013.csv", stringsAsFactors = F)[3:42]
-WimMen <- read.csv(file = "Wimbledon-men-2013.csv", stringsAsFactors = F)[3:42]
-WimWom <- read.csv(file = "Wimbledon-women-2013.csv", stringsAsFactors = F)[3:42]
+AusMen <- read.csv(file = "AusOpen-men-2013.csv", stringsAsFactors = F)[4:42]
+AusWom <- read.csv(file = "AusOpen-women-2013.csv", stringsAsFactors = F)[4:42]
+FreMen <- read.csv(file = "FrenchOpen-men-2013.csv", stringsAsFactors = F)[4:42]
+FreWom <- read.csv(file = "FrenchOpen-women-2013.csv", stringsAsFactors = F)[4:42]
+USMen <- read.csv(file = "USOpen-men-2013.csv", stringsAsFactors = F)[4:42]
+USWom <- read.csv(file = "USOpen-women-2013.csv", stringsAsFactors = F)[4:42]
+WimMen <- read.csv(file = "Wimbledon-men-2013.csv", stringsAsFactors = F)[4:42]
+WimWom <- read.csv(file = "Wimbledon-women-2013.csv", stringsAsFactors = F)[4:42]
 ```
 
 ```{r}
